@@ -1,0 +1,106 @@
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+dbus-update-activation-environment: setting DISPLAY=:0
+dbus-update-activation-environment: setting XAUTHORITY=/home/sammy/.Xauthority
+dbus-update-activation-environment: setting QT_ACCESSIBILITY=1
+dbus-update-activation-environment: setting LANG=en_US.UTF-8
+dbus-update-activation-environment: setting GDM_LANG=en_US
+dbus-update-activation-environment: setting DISPLAY=:0
+dbus-update-activation-environment: setting GTK_OVERLAY_SCROLLING=0
+dbus-update-activation-environment: setting XDG_GREETER_DATA_DIR=/var/lib/lightdm-data/sammy
+dbus-update-activation-environment: setting USER=sammy
+dbus-update-activation-environment: setting DESKTOP_SESSION=xubuntu
+dbus-update-activation-environment: setting QT_QPA_PLATFORMTHEME=gtk2
+dbus-update-activation-environment: setting PWD=/home/sammy
+dbus-update-activation-environment: setting HOME=/home/sammy
+dbus-update-activation-environment: setting QT_ACCESSIBILITY=1
+dbus-update-activation-environment: setting XDG_SESSION_TYPE=x11
+dbus-update-activation-environment: setting XDG_DATA_DIRS=/usr/share/xubuntu:/usr/share/xfce4:/usr/local/share:/usr/share:/var/lib/snapd/desktop
+dbus-update-activation-environment: setting XDG_SESSION_DESKTOP=xubuntu
+dbus-update-activation-environment: setting CLUTTER_BACKEND=x11
+dbus-update-activation-environment: setting SHELL=/bin/bash
+dbus-update-activation-environment: setting XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0
+dbus-update-activation-environment: setting IM_CONFIG_PHASE=1
+dbus-update-activation-environment: setting GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1
+dbus-update-activation-environment: setting SHLVL=1
+dbus-update-activation-environment: setting LANGUAGE=en_US
+dbus-update-activation-environment: setting GDMSESSION=xubuntu
+dbus-update-activation-environment: setting LOGNAME=sammy
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+dbus-update-activation-environment: setting XDG_RUNTIME_DIR=/run/user/1000
+dbus-update-activation-environment: setting XAUTHORITY=/home/sammy/.Xauthority
+dbus-update-activation-environment: setting XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session0
+dbus-update-activation-environment: setting XDG_CONFIG_DIRS=/etc/xdg/xdg-xubuntu:/etc/xdg
+dbus-update-activation-environment: setting PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+dbus-update-activation-environment: setting _=/usr/bin/dbus-update-activation-environment
+
+(xfce4-session:905): xfce4-session-WARNING **: 16:12:59.531: xfsm_manager_load_session: Something wrong with /home/sammy/.cache/sessions/xfce4-session-sammy-VirtualBox:0, Does it exist? Permissions issue?
+** Message: 16:12:59.598: couldn't access control socket: /run/user/1000/keyring/control: No such file or directory
+
+(xfsettingsd:927): xfsettingsd-WARNING **: 16:13:04.732: Failed to get the _NET_NUMBER_OF_DESKTOPS property.
+
+(polkit-gnome-authentication-agent-1:929): GLib-CRITICAL **: 16:13:06.361: g_variant_new_string: assertion 'string != NULL' failed
+
+(polkit-gnome-authentication-agent-1:929): polkit-gnome-1-WARNING **: 16:13:06.368: Failed to register client: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.gnome.SessionManager was not provided by any .service files
+
+(wrapper-2.0:1020): GLib-GIO-CRITICAL **: 16:13:06.400: g_file_new_for_path: assertion 'path != NULL' failed
+
+(wrapper-2.0:1020): GLib-GIO-CRITICAL **: 16:13:06.400: g_file_monitor_file: assertion 'G_IS_FILE (file)' failed
+
+(wrapper-2.0:1020): GLib-GObject-WARNING **: 16:13:06.400: invalid (NULL) pointer instance
+
+(wrapper-2.0:1020): GLib-GObject-CRITICAL **: 16:13:06.400: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(wrapper-2.0:1020): Gtk-WARNING **: 16:13:06.400: Attempting to add a widget with type GtkToggleButton to a container of type XfcePanelPlugin, but the widget is already inside a container of type XfcePanelPlugin, please remove the widget from its existing container first.
+
+(wrapper-2.0:1020): Gtk-WARNING **: 16:13:06.951: Negative content width -3 (allocation 1, extents 2x2) while allocating gadget (node button, owner GtkToggleButton)
+
+(nm-applet:931): Gtk-WARNING **: 16:13:07.583: Can't set a parent on widget which has a parent
+
+** (wrapper-2.0:1030): WARNING **: 16:13:07.943: No outputs have backlight property
+
+(nm-applet:931): Gdk-CRITICAL **: 16:13:08.017: gdk_window_thaw_toplevel_updates: assertion 'window->update_and_descendants_freeze_count > 0' failed
+
+(wrapper-2.0:1032): Gtk-WARNING **: 16:13:08.139: Negative content width -3 (allocation 1, extents 2x2) while allocating gadget (node button, owner PulseaudioButton)
+
+(wrapper-2.0:1030): Gtk-WARNING **: 16:13:08.562: Negative content width -3 (allocation 1, extents 2x2) while allocating gadget (node button, owner PowerManagerButton)
+
+(wrapper-2.0:1017): Gtk-WARNING **: 16:13:08.827: Negative content width -3 (allocation 1, extents 2x2) while allocating gadget (node button, owner GtkToggleButton)
+/usr/lib/python3/dist-packages/blueman/plugins/applet/AppIndicator.py:8: PyGIWarning: AppIndicator3 was imported without specifying a version first. Use gi.require_version('AppIndicator3', '0.1') before import to ensure that the right version gets loaded.
+  from gi.repository import AppIndicator3 as girAppIndicator
+ERROR:dbus.proxies:Introspect error on org.bluez:/: dbus.exceptions.DBusException: org.freedesktop.DBus.Error.NoReply: Did not receive a reply. Possible causes include: the remote application did not send a reply, the message bus security policy blocked the reply, the reply timeout expired, or the network connection was broken.
+ERROR:dbus.proxies:Introspect error on org.bluez:/org/bluez: dbus.exceptions.DBusException: org.freedesktop.DBus.Error.TimedOut: Failed to activate service 'org.bluez': timed out (service_start_timeout=25000ms)
+ERROR:dbus.proxies:Introspect error on org.bluez:/: dbus.exceptions.DBusException: org.freedesktop.DBus.Error.TimedOut: Failed to activate service 'org.bluez': timed out (service_start_timeout=25000ms)
+xfce4-taskmanager-Message: 16:14:51.469: Running as sammy on sammy-VirtualBox
+
+(wrapper-2.0:1017): Gdk-CRITICAL **: 16:16:05.761: Window 0x55588e093c90 has not been made visible in GdkSeatGrabPrepareFunc
+
+(wrapper-2.0:1017): Gdk-CRITICAL **: 16:16:05.763: Window 0x55588e093c90 has not been made visible in GdkSeatGrabPrepareFunc
+Gtk-Message: 16:16:06.081: GtkDialog mapped without a transient parent. This is discouraged.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+xfce4-taskmanager-Message: 16:16:34.933: Running as sammy on sammy-VirtualBox
+
+(xfce4-taskmanager:1359): Gtk-CRITICAL **: 16:16:55.320: IA__gtk_tree_view_get_selection: assertion 'GTK_IS_TREE_VIEW (tree_view)' failed
+
+(xfce4-taskmanager:1359): Gtk-CRITICAL **: 16:16:55.321: IA__gtk_tree_selection_unselect_all: assertion 'GTK_IS_TREE_SELECTION (selection)' failed
+ExceptionHandler::GenerateDump cloned child 1771ExceptionHandler::WaitForContinueSignal waiting for continue signal...
+
+ExceptionHandler::SendContinueSignalToChild sent continue signal to child
+Exiting due to channel error.
+Exiting due to channel error.
+
+(/usr/lib/firefox/firefox:1936): dconf-WARNING **: 16:19:46.136: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Permission denied
+
+(/usr/lib/firefox/firefox:1967): dconf-WARNING **: 16:22:13.151: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Permission denied
+thunar-volman: Unsupported USB device type "usb".
+
+(/usr/lib/firefox/firefox:16412): dconf-WARNING **: 22:02:04.744: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Permission denied
+
+(/usr/lib/firefox/firefox:2248): dconf-WARNING **: 22:15:52.943: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Permission denied
+
+(/usr/lib/firefox/firefox:2115): dconf-WARNING **: 22:18:17.942: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Permission denied
+[Parent 1779, Gecko_IOThread] WARNING: pipe error (251): Connection reset by peer: file /build/firefox-gS7uvX/firefox-69.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x9F0001,name=PVsync::Msg_Notify) Channel error: cannot send/recv
+

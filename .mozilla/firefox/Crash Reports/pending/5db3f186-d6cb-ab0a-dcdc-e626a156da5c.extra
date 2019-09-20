@@ -1,0 +1,35 @@
+AdapterDeviceID=0x0405
+AdapterDriverVendor=mesa/swrast
+AdapterDriverVersion=19.0.2.0
+AdapterVendorID=0x15ad
+Add-ons=webcompat%40mozilla.org:5.0.2,formautofill%40mozilla.org:1.0,fxmonitor%40mozilla.org:3.0,screenshots%40mozilla.org:39.0.0,default-theme%40mozilla.org:1.0,google%40search.mozilla.org:1.0,amazondotcom%40search.mozilla.org:1.1,bing%40search.mozilla.org:1.0,ddg%40search.mozilla.org:1.0,ebay%40search.mozilla.org:1.0,twitter%40search.mozilla.org:1.0,wikipedia%40search.mozilla.org:1.0
+BuildID=20190718161435
+ContentSandboxCapabilities=119
+ContentSandboxCapable=1
+ContentSandboxLevel=4
+DOMIPCEnabled=1
+FramePoisonBase=9223372036600930304
+FramePoisonSize=4096
+InstallTime=1568852145
+IsWayland=0
+Notes=Ubuntu 18.04.3 LTSFP(D00-L1000-W00000000-T000) WR? WR- OMTP? OMTP+1 
+ProductID={ec8030f7-c20a-464f-9b0e-13a3a9e97384}
+ProductName=Firefox
+ReleaseChannel=release
+SafeMode=0
+ServerURL=https://crash-reports.mozilla.com/submit?id={ec8030f7-c20a-464f-9b0e-13a3a9e97384}&version=68.0.1&buildid=20190718161435
+ShutdownProgress=quit-application
+StartupCrash=0
+StartupTime=1568873338
+TelemetryClientId=680dd635-8066-4eea-b05b-a6abb511baaf
+TelemetryEnvironment={"build":{"applicationId":"{ec8030f7-c20a-464f-9b0e-13a3a9e97384}","applicationName":"Firefox","architecture":"x86-64","buildId":"20190718161435","version":"68.0.1","vendor":"Mozilla","displayVersion":"68.0.1","platformVersion":"68.0.1","xpcomAbi":"x86_64-gcc3","updaterAvailable":false},"partner":{"distributionId":"canonical","distributionVersion":"1.0","partnerId":"ubuntu","distributor":"canonical","distributorChannel":"ubuntu","partnerNames":["ubuntu"]},"system":{"memoryMB":1667,"virtualMaxMB":null,"cpu":{"count":2,"cores":2,"vendor":"GenuineIntel","family":6,"model":92,"stepping":9,"l2cacheKB":1024,"l3cacheKB":1024,"speedMHz":null,"extensions":["hasMMX","hasSSE","hasSSE2","hasSSE3","hasSSSE3","hasSSE4_1","hasSSE4_2","hasAES"]},"os":{"name":"Linux","version":"5.0.0-23-generic","locale":"en-US"},"hdd":{"profile":{"model":null,"revision":null,"type":null},"binary":{"model":null,"revision":null,"type":null},"system":{"model":null,"revision":null,"type":null}},"gfx":{"D2DEnabled":null,"DWriteEnabled":null,"ContentBackend":"Skia","Headless":false,"adapters":[{"description":"SVGA3D; build: RELEASE;  LLVM;","vendorID":"0x15ad","deviceID":"0x0405","subsysID":null,"RAM":1,"driver":null,"driverVendor":"mesa/swrast","driverVersion":"19.0.2.0","driverDate":null,"GPUActive":true}],"monitors":[{"screenWidth":1360,"screenHeight":768}],"features":{"compositor":"basic","gpuProcess":{"status":"unused"},"wrQualified":{"status":"blocked-vendor-unsupported"},"webrender":{"status":"opt-in"}}},"appleModelId":null},"settings":{"blocklistEnabled":true,"e10sEnabled":true,"e10sMultiProcesses":8,"telemetryEnabled":false,"locale":"en-US","intl":{"requestedLocales":["en-US"],"availableLocales":["en-US"],"appLocales":["en-US","und"],"systemLocales":["en-US"],"regionalPrefsLocales":["en-US"],"acceptLanguages":["en-US","en"]},"update":{"channel":"release","enabled":true,"autoDownload":false},"userPrefs":{"browser.cache.disk.capacity":696320,"browser.search.region":"US","browser.search.widget.inNavBar":false},"sandbox":{"effectiveContentProcessLevel":4},"addonCompatibilityCheckEnabled":true,"isDefaultBrowser":false,"defaultSearchEngine":"google","defaultSearchEngineData":{"name":"Google","loadPath":"[distribution]/searchplugins/locale/en-US/google.xml","origin":"default","submissionURL":"https://www.google.com/search?client=ubuntu&channel=fs&q=&ie=utf-8&oe=utf-8"}},"profile":{"creationDate":18158,"firstUseDate":18158},"addons":{"activeAddons":{"webcompat@mozilla.org":{"version":"5.0.2","scope":1,"type":"extension","updateDay":18158,"isSystem":true,"isWebExtension":true,"multiprocessCompatible":true},"formautofill@mozilla.org":{"version":"1.0","scope":1,"type":"extension","updateDay":18095,"isSystem":true,"isWebExtension":true,"multiprocessCompatible":true},"fxmonitor@mozilla.org":{"version":"3.0","scope":1,"type":"extension","updateDay":18095,"isSystem":true,"isWebExtension":true,"multiprocessCompatible":true},"screenshots@mozilla.org":{"version":"39.0.0","scope":1,"type":"extension","updateDay":18095,"isSystem":true,"isWebExtension":true,"multiprocessCompatible":true},"google@search.mozilla.org":{"version":"1.0","scope":4,"type":"extension","updateDay":18095,"isSystem":false,"isWebExtension":true,"multiprocessCompatible":true},"amazondotcom@search.mozilla.org":{"version":"1.1","scope":4,"type":"extension","updateDay":18095,"isSystem":false,"isWebExtension":true,"multiprocessCompatible":true},"bing@search.mozilla.org":{"version":"1.0","scope":4,"type":"extension","updateDay":18095,"isSystem":false,"isWebExtension":true,"multiprocessCompatible":true},"ddg@search.mozilla.org":{"version":"1.0","scope":4,"type":"extension","updateDay":18095,"isSystem":false,"isWebExtension":true,"multiprocessCompatible":true},"ebay@search.mozilla.org":{"version":"1.0","scope":4,"type":"extension","updateDay":18095,"isSystem":false,"isWebExtension":true,"multiprocessCompatible":true},"twitter@search.mozilla.org":{"version":"1.0","scope":4,"type":"extension","updateDay":18095,"isSystem":false,"isWebExtension":true,"multiprocessCompatible":true},"wikipedia@search.mozilla.org":{"version":"1.0","scope":4,"type":"extension","updateDay":18095,"isSystem":false,"isWebExtension":true,"multiprocessCompatible":true}},"theme":{},"activePlugins":[{"name":"dummy","version":"0.1","description":"Blocklist unavailable","blocklisted":false,"disabled":true,"clicktoplay":false,"mimeTypes":["text/there.is.only.blocklist"],"updateDay":18158}],"activeGMPlugins":{"dummy-gmp":{"version":"0.1","userDisabled":false,"applyBackgroundUpdates":1}}},"experiments":{"rollout-etp-new-users-trailhead-1547192":{"branch":"active","type":"normandy-prefrollout"}}}
+TelemetryServerURL=https://incoming.telemetry.mozilla.org
+URL=about:blank
+Vendor=Mozilla
+Version=68.0.1
+useragent_locale=en-US
+TelemetrySessionId=fae82171-d894-437e-abbb-d87bd06e344c
+CrashTime=1568934710
+UptimeTS=7579.57607183
+MozCrashReason=MOZ_CRASH(Shutdown hanging before starting.)
+ThreadIdNameMapping=1135:"Gecko_IOThread",1136:"JS Watchdog",1137:"JS Helper",1138:"JS Helper",1140:"Timer",1141:"Link Monitor",1142:"Socket Thread",1153:"Cache2 I/O",1154:"Cookie",1157:"GMPThread",1158:"Worker Launcher",1159:"SoftwareVsyncThread",1160:"Compositor",1161:"ImgDecoder #1",1162:"ImageIO",1167:"ImageBridgeChild",1168:"IPDL Background",1169:"DOM Worker",1178:"Breakpad Server",1184:"FS Broker 1181",1206:"DataStorage",1210:"Cache I/O",1217:"HTML5 Parser",1218:"mozStorage #1",1219:"mozStorage #2",1220:"mozStorage #3",1241:"mozStorage #4",1242:"QuotaManager IO",1244:"DOM Worker",1245:"localStorage DB",1253:"FS Broker 1248",1267:"mozStorage #5",1277:"URL Classifier",1278:"Classifier Update",1291:"DOM Worker",1292:"DOM File",1294:"mozStorage #6",1761:"mozStorage #7",1769:"mozStorage #8",9407:"DNS Resolver #58",9408:"DNS Resolver #59",9462:"DOM Worker",10009:"FS Broker 10006",10013:"Shutdown Hang Terminator",

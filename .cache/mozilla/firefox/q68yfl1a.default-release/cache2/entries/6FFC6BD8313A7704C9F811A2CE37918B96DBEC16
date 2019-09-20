@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+        <title>Career School Now Search Widget</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+        <link href="/build/css/iframe-1b0384084f.css" type="text/css" rel="stylesheet">
+
+        <script type="text/javascript" src="/build/js/iframe-65ba4d062c.js"></script>
+
+        <script type="text/javascript">
+
+            $csnQ( function(){
+
+                //
+                // Wait to initialize events until the postMessage "handshake" is complete
+                // -- iframe sends csn.INIT to parent, parent sends csn.INIT back
+                //
+                $csnQ( document ).on( "csn_iframe:message_ready", function() {
+
+                    EventsModule.init();
+                });
+
+                window.addEventListener( "message", receiveMessage, false );
+                function receiveMessage(message)
+                {
+                    //
+                    // Ignore messages that aren't strings
+                    //
+                    if( typeof message.data !== "string" || message.data.indexOf( "csn." ) < 0  ) return;
+
+                    //
+                    // Ignore non csn. messages -- we really only care about listening for INIT response from the parent
+                    //
+                    if( message.data.indexOf( "csn.INIT" ) >= 0 )
+                    {
+                        //
+                        // Parent communication channel established, trigger other dependent actions
+                        //
+                        $csnQ( document ).trigger( "csn_iframe:message_ready" );
+                    }
+                }
+
+                //
+                // Send INIT message to parent
+                //
+                window.parent.postMessage( "csn.INIT", "*" );
+
+            });
+
+
+
+        </script>
+
+        <style type="text/css">
+
+                            .csn-widget-box .form-wrap .top { background-color: #2e5058; }
+                .csn-iframe-box .header { background-color: #2e5058; }
+                .csn-widget-box .form-wrap .top .arrow { border-top-color: #2e5058; }
+                
+            
+                                                .csn-top-bar .c1{ background-color: #487e8a}
+                                    .csn-top-bar .c2{ background-color: #406e79}
+                                    .csn-top-bar .c3{ background-color: #375f69}
+                                    .csn-top-bar .c4{ background-color: #254147}
+                                    .csn-top-bar .c5{ background-color: #1c3237}
+                                    .csn-top-bar .c6{ background-color: #142226}
+                            
+            
+        </style>
+
+            </head>
+    <body>
+    <div id="csn-overlay"></div>
+
+    <div id="csn-widget-wrap">
+        <div class="csn-wrap">
+
+            <div class="csn-widget-box search-box">
+
+                <div class="csn-container">
+                        <div class="form-wrap">
+
+        <div class="top">
+            <h2 class="header">Explore a Career in Phlebotomy Now!</h2>
+            <p>Get information from local schools</p>
+            <span class="arrow"></span>
+        </div>
+
+        <form method="POST" action="https://widget.careerschoolnow.org/search" accept-charset="UTF-8" class="csn-form search-form" id="csn-search-form"><input name="_token" type="hidden" value="aXNwxplZPTrDK7WtcbahFuR8jPYP73nMfoa0ZqaZ">
+            <div class="form-wrapper">
+
+                
+                <div class="field-wrap area">
+    <label for="area_of_interest"><span>Area of Interest</span> <span class="bg"></span></label>
+    <div class="select-wrap">
+        <select name="area_of_interest" id="area_of_interest" class="form-field">
+            <option value="0"></option>
+                            <option value="building-systems-construction-and-manufacturing" >Building Systems, Construction, and Manufacturing</option>
+                            <option value="business-marketing-and-communication" >Business, Marketing, and Communication</option>
+                            <option value="computer-information-and-technology" >Computer, Information, and Technology</option>
+                            <option value="cosmetology-and-wellness" >Cosmetology and Wellness</option>
+                            <option value="culinary-arts-food-service-and-nutrition" >Culinary Arts, Food Service, and Nutrition</option>
+                            <option value="design-arts-and-architecture" >Design, Arts, and Architecture</option>
+                            <option value="education-and-human-services" >Education and Human Services</option>
+                            <option value="legal-law-enforcement-and-emergency-services" >Legal, Law Enforcement, and Emergency Services</option>
+                            <option value="liberal-arts-humanities-and-literature" >Liberal Arts, Humanities, and Literature</option>
+                            <option value="math-engineering-and-physical-sciences" >Math, Engineering, and Physical Sciences</option>
+                            <option value="medical-administration" >Medical Administration</option>
+                            <option value="medicine-and-health-care" selected>Medicine and Health Care</option>
+                            <option value="natural-resources-agriculture-and-biology" >Natural Resources, Agriculture, and Biology</option>
+                            <option value="nursing" >Nursing</option>
+                            <option value="truck-driving-transportation-and-mechanics" >Truck Driving, Transportation, and Mechanics</option>
+                    </select>
+        <span class="arrow"><i></i></span>
+    </div>
+</div>                <div class="field-wrap program">
+    <label for="career"><span>Program</span> <span class="bg"></span></label>
+    <div class="select-wrap">
+        <select name="career" id="career" class="form-field">
+            <option data-area_of_interest="0" value="0"></option>
+                            <option data-area_of_interest="business-marketing-and-communication" value="accounting" >Accounting</option>
+                            <option data-area_of_interest="medicine-and-health-care" value="acupuncture" >Acupuncture</option>
+                            <option data-area_of_interest="business-marketing-and-communication" value="administrative-assisting" >Administrative Assisting</option>
+                            <option data-area_of_interest="business-marketing-and-communication" value="advertising" >Advertising</option>
+                            <option data-area_of_interest="math-engineering-and-physical-sciences" value="aerospace-engineering" >Aerospace Engineering</option>
+                            <option data-area_of_interest="natural-resources-agriculture-and-biology" value="agribusiness" >Agribusiness</option>
+                            <option data-area_of_interest="natural-resources-agriculture-and-biology" value="agriculture" >Agriculture</option>
+                            <option data-area_of_interest="truck-driving-transportation-and-mechanics" value="air-transportation" >Air Transportation</option>
+                            <option data-area_of_interest="truck-driving-transportation-and-mechanics" value="aircraft-maintenance" >Aircraft Maintenance</option>
+                            <option data-area_of_interest="medicine-and-health-care" value="alternative-medicine" >Alternative Medicine</option>
+                            <option data-area_of_interest="natural-resources-agriculture-and-biology" value="animal-sciences" >Animal Sciences</option>
+                            <option data-area_of_interest="liberal-arts-humanities-and-literature" value="anthropology" >Anthropology</option>
+                            <option data-area_of_interest="math-engineering-and-physical-sciences" value="architectural-engineering" >Architectural Engineering</option>
+                            <option data-area_of_interest="design-arts-and-architecture" value="architecture" >Architecture</option>
+                            <option data-area_of_interest="liberal-arts-humanities-and-literature" value="area-studies" >Area Studies</option>
+                            <option data-area_of_interest="design-arts-and-architecture" value="arts" >Arts</option>
+                            <option data-area_of_interest="medicine-and-health-care" value="audiology" >Audiology</option>
+                            <option data-area_of_interest="computer-information-and-technology" value="audiovisual-communications" >Audiovisual Communications</option>
+                            <option data-area_of_interest="truck-driving-transportation-and-mechanics" value="automotive-technology" >Automotive Technology</option>
+                            <option data-area_of_interest="culinary-arts-food-service-and-nutrition" value="baking-and-pastry-arts" >Baking and Pastry Arts</option>
+                            <option data-area_of_interest="cosmetology-and-wellness" value="barbering" >Barbering</option>
+                            <option data-area_of_interest="culinary-arts-food-service-and-nutrition" value="bartending" >Bartending</option>
+                            <option data-area_of_interest="natural-resources-agriculture-and-biology" value="biochemistry" >Biochemistry</option>
+                            <option data-area_of_interest="math-engineering-and-physical-sciences" value="bioengineering" >Bioengineering</option>
+                            <option data-area_of_interest="natural-resources-agriculture-and-biology" value="biology" >Biology</option>
+                            <option data-area_of_interest="natural-resources-agriculture-and-biology" value="biology-technology" >Biology Technology</option>
+                            <option data-area_of_interest="business-marketing-and-communication" value="business-administration" >Business Administration</option>
+                            <option data-area_of_interest="building-systems-construction-and-manufacturing" value="carpentry" >Carpentry</option>
+                            <option data-area_of_interest="math-engineering-and-physical-sciences" value="chemical-engineering" >Chemical Engineering</option>
+                            <option data-area_of_interest="math-engineering-and-physical-sciences" value="chemical-technology" >Chemical Technology</option>
+                            <option data-area_of_interest="math-engineering-and-physical-sciences" value="chemistry" >Chemistry</option>
+                            <option data-area_of_interest="education-and-human-services" value="child-care" >Child Care</option>
+                            <option data-area_of_interest="design-arts-and-architecture" value="cinema" >Cinema</option>
+                            <option data-area_of_interest="math-engineering-and-physical-sciences" value="civil-engineering" >Civil Engineering</option>
+                            <option data-area_of_interest="truck-driving-transportation-and-mechanics" value="class-a-cdl-driving" >Class-A CDL Driving</option>
+                            <option data-area_of_interest="nursing" value="cna-certified-nursing-assistant" >CNA - Certified Nursing Assistant</option>
+                            <option data-area_of_interest="business-marketing-and-communication" value="communication" >Communication</option>
+                            <option data-area_of_interest="computer-information-and-technology" value="communications-technology" >Communications Technology</option>
+                            <option data-area_of_interest="math-engineering-and-physical-sciences" value="computer-engineering" >Computer Engineering</option>
+                            <option data-area_of_interest="computer-information-and-technology" value="computer-science" >Computer Science</option>
+                            <option data-area_of_interest="computer-information-and-technology" value="computer-systems" >Computer Systems</option>
+                            <option data-area_of_interest="computer-information-and-technology" value="computer-technology" >Computer Technology</option>
+                            <option data-area_of_interest="building-systems-construction-and-manufacturing" value="construction" >Construction</option>
+                            <option data-area_of_interest="legal-law-enforcement-and-emergency-services" value="corrections" >Corrections</option>
+                            <option data-area_of_interest="cosmetology-and-wellness" value="cosmetology" >Cosmetology</option>
+                            <option data-area_of_interest="education-and-human-services" value="counseling" >Counseling</option>
+                            <option data-area_of_interest="legal-law-enforcement-and-emergency-services" value="court-reporting" >Court Reporting</option>
+                            <option data-area_of_interest="legal-law-enforcement-and-emergency-services" value="criminal-justice" >Criminal Justice</option>
+                            <option data-area_of_interest="culinary-arts-food-service-and-nutrition" value="culinary" >Culinary</option>
+                            <option data-area_of_interest="computer-information-and-technology" value="cyber-security" >Cyber Security</option>
+                            <option data-area_of_interest="design-arts-and-architecture" value="dance" >Dance</option>
+                            <option data-area_of_interest="computer-information-and-technology" value="data-entry" >Data Entry</option>
+                            <option data-area_of_interest="medicine-and-health-care" value="dental-assisting" >Dental Assisting</option>
+                            <option data-area_of_interest="medicine-and-health-care" value="dental-hygiene" >Dental Hygiene</option>
+                            <option data-area_of_interest="medicine-and-health-care" value="dental-lab-technology" >Dental Lab Technology</option>
+                            <option data-area_of_interest="medicine-and-health-care" value="dentistry" >Dentistry</option>
+                            <option data-area_of_interest="design-arts-and-architecture" value="design" >Design</option>
+                            <option data-area_of_interest="truck-driving-transportation-and-mechanics" value="diesel-technology" >Diesel Technology</option>
+                            <option data-area_of_interest="culinary-arts-food-service-and-nutrition" value="dietetics-and-nutrition" >Dietetics and Nutrition</option>
+                            <option data-area_of_interest="design-arts-and-architecture" value="drafting-technology" >Drafting Technology</option>
+                            <option data-area_of_interest="natural-resources-agriculture-and-biology" value="ecology" >Ecology</option>
+                            <option data-area_of_interest="liberal-arts-humanities-and-literature" value="economics" >Economics</option>
+                            <option data-area_of_interest="education-and-human-services" value="education" >Education</option>
+                            <option data-area_of_interest="building-systems-construction-and-manufacturing" value="electrical" >Electrical</option>
+                            <option data-area_of_interest="math-engineering-and-physical-sciences" value="electrical-engineering" >Electrical Engineering</option>
+                            <option data-area_of_interest="building-systems-construction-and-manufacturing" value="electrical-technology" >Electrical Technology</option>
+                            <option data-area_of_interest="legal-law-enforcement-and-emergency-services" value="emergency-medical-technology" >Emergency Medical Technology</option>
+                            <option data-area_of_interest="building-systems-construction-and-manufacturing" value="energy" >Energy</option>
+                            <option data-area_of_interest="math-engineering-and-physical-sciences" value="engineering" >Engineering</option>
+                            <option data-area_of_interest="math-engineering-and-physical-sciences" value="engineering-technology" >Engineering Technology</option>
+                            <option data-area_of_interest="natural-resources-agriculture-and-biology" value="environmental-studies" >Environmental Studies</option>
+                            <option data-area_of_interest="cosmetology-and-wellness" value="esthetics" >Esthetics</option>
+                            <option data-area_of_interest="liberal-arts-humanities-and-literature" value="ethnic-studies" >Ethnic Studies</option>
+                            <option data-area_of_interest="education-and-human-services" value="family-and-consumer-services" >Family and Consumer Services</option>
+                            <option data-area_of_interest="business-marketing-and-communication" value="fashion-merchandising" >Fashion Merchandising</option>
+                            <option data-area_of_interest="business-marketing-and-communication" value="finance" >Finance</option>
+                            <option data-area_of_interest="legal-law-enforcement-and-emergency-services" value="fire-science" >Fire Science</option>
+                            <option data-area_of_interest="natural-resources-agriculture-and-biology" value="food-science" >Food Science</option>
+                            <option data-area_of_interest="culinary-arts-food-service-and-nutrition" value="food-service" >Food Service</option>
+                            <option data-area_of_interest="liberal-arts-humanities-and-literature" value="foreign-languages" >Foreign Languages</option>
+                            <option data-area_of_interest="legal-law-enforcement-and-emergency-services" value="forensics" >Forensics</option>
+                            <option data-area_of_interest="education-and-human-services" value="funeral-services" >Funeral Services</option>
+                            <option data-area_of_interest="liberal-arts-humanities-and-literature" value="general-studies" >General Studies</option>
+                            <option data-area_of_interest="liberal-arts-humanities-and-literature" value="geography" >Geography</option>
+                            <option data-area_of_interest="math-engineering-and-physical-sciences" value="geology" >Geology</option>
+                            <option data-area_of_interest="cosmetology-and-wellness" value="hair-styling" >Hair Styling</option>
+                            <option data-area_of_interest="medicine-and-health-care" value="health-aide" >Health Aide</option>
+                            <option data-area_of_interest="medical-administration" value="health-care-administration" >Health Care Administration</option>
+                            <option data-area_of_interest="medical-administration" value="health-information-services" >Health Information Services</option>
+                            <option data-area_of_interest="liberal-arts-humanities-and-literature" value="history" >History</option>
+                            <option data-area_of_interest="business-marketing-and-communication" value="hospitality-and-leisure-management" >Hospitality and Leisure Management</option>
+                            <option data-area_of_interest="business-marketing-and-communication" value="human-resources" >Human Resources</option>
+                            <option data-area_of_interest="education-and-human-services" value="human-services" >Human Services</option>
+                            <option data-area_of_interest="building-systems-construction-and-manufacturing" value="hvac" >HVAC</option>
+                            <option data-area_of_interest="math-engineering-and-physical-sciences" value="industrial-engineering" >Industrial Engineering</option>
+                            <option data-area_of_interest="truck-driving-transportation-and-mechanics" value="industrial-mechanics" >Industrial Mechanics</option>
+                            <option data-area_of_interest="computer-information-and-technology" value="information-systems-management" >Information Systems Management</option>
+                            <option data-area_of_interest="computer-information-and-technology" value="information-technology" >Information Technology</option>
+                            <option data-area_of_interest="business-marketing-and-communication" value="international-business" >International Business</option>
+                            <option data-area_of_interest="business-marketing-and-communication" value="international-relations" >International Relations</option>
+                            <option data-area_of_interest="business-marketing-and-communication" value="journalism" >Journalism</option>
+                            <option data-area_of_interest="medicine-and-health-care" value="kinesiology" >Kinesiology</option>
+                            <option data-area_of_interest="medicine-and-health-care" value="lab-technology" >Lab Technology</option>
+                            <option data-area_of_interest="legal-law-enforcement-and-emergency-services" value="law" >Law</option>
+                            <option data-area_of_interest="liberal-arts-humanities-and-literature" value="liberal-arts" >Liberal Arts</option>
+                            <option data-area_of_interest="liberal-arts-humanities-and-literature" value="library-science" >Library Science</option>
+                            <option data-area_of_interest="liberal-arts-humanities-and-literature" value="linguistics" >Linguistics</option>
+                            <option data-area_of_interest="nursing" value="lpn-licensed-practical-nursing" >LPN - Licensed Practical Nursing</option>
+                            <option data-area_of_interest="cosmetology-and-wellness" value="makeup-artistry" >Makeup Artistry</option>
+                            <option data-area_of_interest="truck-driving-transportation-and-mechanics" value="marine-maintenance" >Marine Maintenance</option>
+                            <option data-area_of_interest="business-marketing-and-communication" value="marketing" >Marketing</option>
+                            <option data-area_of_interest="cosmetology-and-wellness" value="massage-therapy" >Massage Therapy</option>
+                            <option data-area_of_interest="math-engineering-and-physical-sciences" value="materials-engineering" >Materials Engineering</option>
+                            <option data-area_of_interest="math-engineering-and-physical-sciences" value="math" >Math</option>
+                            <option data-area_of_interest="math-engineering-and-physical-sciences" value="mechanical-engineering" >Mechanical Engineering</option>
+                            <option data-area_of_interest="medicine-and-health-care" value="medical-assisting" >Medical Assisting</option>
+                            <option data-area_of_interest="medical-administration" value="medical-billing" >Medical Billing</option>
+                            <option data-area_of_interest="medical-administration" value="medical-coding" >Medical Coding</option>
+                            <option data-area_of_interest="medicine-and-health-care" value="medical-secretary" >Medical Secretary</option>
+                            <option data-area_of_interest="medical-administration" value="medical-social-work" >Medical Social Work</option>
+                            <option data-area_of_interest="medicine-and-health-care" value="medical-technology" >Medical Technology</option>
+                            <option data-area_of_interest="medical-administration" value="medical-transcription" >Medical Transcription</option>
+                            <option data-area_of_interest="medicine-and-health-care" value="medicine" >Medicine</option>
+                            <option data-area_of_interest="building-systems-construction-and-manufacturing" value="metal-working" >Metal Working</option>
+                            <option data-area_of_interest="math-engineering-and-physical-sciences" value="military-technology" >Military Technology</option>
+                            <option data-area_of_interest="truck-driving-transportation-and-mechanics" value="motorcycle-maintenance" >Motorcycle Maintenance</option>
+                            <option data-area_of_interest="design-arts-and-architecture" value="music" >Music</option>
+                            <option data-area_of_interest="cosmetology-and-wellness" value="nail-care" >Nail Care</option>
+                            <option data-area_of_interest="natural-resources-agriculture-and-biology" value="natural-sciences" >Natural Sciences</option>
+                            <option data-area_of_interest="nursing" value="np-nursing-practice" >NP - Nursing Practice</option>
+                            <option data-area_of_interest="nursing" value="nursing-science" >Nursing Science</option>
+                            <option data-area_of_interest="truck-driving-transportation-and-mechanics" value="operations-management" >Operations Management</option>
+                            <option data-area_of_interest="legal-law-enforcement-and-emergency-services" value="paralegal" >Paralegal</option>
+                            <option data-area_of_interest="medicine-and-health-care" value="pharmacology" >Pharmacology</option>
+                            <option data-area_of_interest="medicine-and-health-care" value="pharmacy-technology" >Pharmacy Technology</option>
+                            <option data-area_of_interest="liberal-arts-humanities-and-literature" value="philosophy" >Philosophy</option>
+                            <option data-area_of_interest="medicine-and-health-care" value="phlebotomy" selected>Phlebotomy</option>
+                            <option data-area_of_interest="design-arts-and-architecture" value="photography" >Photography</option>
+                            <option data-area_of_interest="math-engineering-and-physical-sciences" value="physical-sciences" >Physical Sciences</option>
+                            <option data-area_of_interest="medicine-and-health-care" value="physical-therapy-assisting" >Physical Therapy Assisting</option>
+                            <option data-area_of_interest="math-engineering-and-physical-sciences" value="physics" >Physics</option>
+                            <option data-area_of_interest="natural-resources-agriculture-and-biology" value="physiology" >Physiology</option>
+                            <option data-area_of_interest="building-systems-construction-and-manufacturing" value="plumbing" >Plumbing</option>
+                            <option data-area_of_interest="legal-law-enforcement-and-emergency-services" value="police-officer" >Police Officer</option>
+                            <option data-area_of_interest="liberal-arts-humanities-and-literature" value="political-science" >Political Science</option>
+                            <option data-area_of_interest="medicine-and-health-care" value="pre-med" >Pre-Med</option>
+                            <option data-area_of_interest="nursing" value="pre-nursing" >Pre-Nursing</option>
+                            <option data-area_of_interest="medicine-and-health-care" value="pre-vet" >Pre-Vet</option>
+                            <option data-area_of_interest="building-systems-construction-and-manufacturing" value="precision-production" >Precision Production</option>
+                            <option data-area_of_interest="computer-information-and-technology" value="programming" >Programming</option>
+                            <option data-area_of_interest="liberal-arts-humanities-and-literature" value="psychology" >Psychology</option>
+                            <option data-area_of_interest="education-and-human-services" value="public-administration" >Public Administration</option>
+                            <option data-area_of_interest="education-and-human-services" value="public-health" >Public Health</option>
+                            <option data-area_of_interest="business-marketing-and-communication" value="public-relations" >Public Relations</option>
+                            <option data-area_of_interest="medicine-and-health-care" value="radiologic-technology" >Radiologic Technology</option>
+                            <option data-area_of_interest="business-marketing-and-communication" value="real-estate" >Real Estate</option>
+                            <option data-area_of_interest="liberal-arts-humanities-and-literature" value="religious-studies" >Religious Studies</option>
+                            <option data-area_of_interest="culinary-arts-food-service-and-nutrition" value="restaurant-management" >Restaurant Management</option>
+                            <option data-area_of_interest="business-marketing-and-communication" value="rhetoric" >Rhetoric</option>
+                            <option data-area_of_interest="nursing" value="rn-registered-nursing" >RN - Registered Nursing</option>
+                            <option data-area_of_interest="business-marketing-and-communication" value="sales" >Sales</option>
+                            <option data-area_of_interest="liberal-arts-humanities-and-literature" value="social-sciences" >Social Sciences</option>
+                            <option data-area_of_interest="education-and-human-services" value="social-work" >Social Work</option>
+                            <option data-area_of_interest="liberal-arts-humanities-and-literature" value="sociology" >Sociology</option>
+                            <option data-area_of_interest="culinary-arts-food-service-and-nutrition" value="sommelier" >Sommelier</option>
+                            <option data-area_of_interest="education-and-human-services" value="special-education" >Special Education</option>
+                            <option data-area_of_interest="math-engineering-and-physical-sciences" value="statistics" >Statistics</option>
+                            <option data-area_of_interest="medicine-and-health-care" value="surgical-technology" >Surgical Technology</option>
+                            <option data-area_of_interest="education-and-human-services" value="teaching" >Teaching</option>
+                            <option data-area_of_interest="design-arts-and-architecture" value="theatre" >Theatre</option>
+                            <option data-area_of_interest="medicine-and-health-care" value="therapist" >Therapist</option>
+                            <option data-area_of_interest="business-marketing-and-communication" value="tourism" >Tourism</option>
+                            <option data-area_of_interest="truck-driving-transportation-and-mechanics" value="transportation" >Transportation</option>
+                            <option data-area_of_interest="medicine-and-health-care" value="veterinary" >Veterinary</option>
+                            <option data-area_of_interest="medicine-and-health-care" value="veterinary-assistant" >Veterinary Assistant</option>
+                            <option data-area_of_interest="building-systems-construction-and-manufacturing" value="welding" >Welding</option>
+                    </select>
+        <span class="arrow"><i></i></span>
+    </div>
+</div>
+                
+                    <ul class="segmented-control">
+    <li class="segmented-control__item">
+        <input
+            class="segmented-control__input"
+            type="radio"
+            value="ground"
+            name="designation"
+            id="designation-ground"
+                        checked
+                    >
+        <label class="segmented-control__label" for="designation-ground">Campus</label>
+    </li>
+    <li class="segmented-control__item">
+        <input
+            class="segmented-control__input"
+            type="radio"
+            value="online"
+            name="designation"
+            id="designation-online"
+                        checked
+                    >
+        <label class="segmented-control__label" for="designation-online">Online</label>
+    </li>
+    <li class="segmented-control__item">
+        <input
+            class="segmented-control__input"
+            type="radio"
+            value="both"
+            name="designation"
+            id="designation-both"
+                        checked
+                    >
+        <label class="segmented-control__label" for="designation-both">Both</label>
+    </li>
+</ul>
+                
+                <div class="button-row">
+                    <div class="field-wrap postal">
+                        <label for="postal_code"><span>Zip Code</span> <span class="bg"></span></label>
+                        <div class="field-container">
+                            <input class="form-field" maxlength="5" name="postal_code" type="tel">
+                            <span class="arrow"></span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <input class="btn continue-button" type="submit" value="Continue">
+                        <div class="loading-button">
+                            <span class="csn-text">Matching</span>
+                            <div class="spinner"> <div class="bounce1"></div> <div class="bounce2"></div> <div class="bounce3"></div> </div>
+                        </div>
+                    </div>
+                </div>
+
+                <input name="type" type="hidden" value="search">
+<input name="header" type="hidden" value="Explore a Career in Phlebotomy Now!">
+<input name="tagline" type="hidden" value="">
+<input name="header_background" type="hidden" value="2e5058">
+<input name="header_text_color" type="hidden" value="light">
+
+<input name="vendor" type="hidden" value="">
+<input name="pixel" type="hidden" value="">
+
+
+<input name="default_career" type="hidden" value="phlebotomy">
+<input name="default_area_of_interest" type="hidden" value="medicine-and-health-care">                <input name="csnc" type="hidden" value="">
+<input name="csna" type="hidden" value="TOCMj">
+<input name="csnp" type="hidden" value="nkujE">
+<input name="csns" type="hidden" value="">
+<input name="csnl" type="hidden" value="">
+<input name="search_id" type="hidden" value="">
+
+
+<input id="leadid_token" name="universal_leadid" type="hidden">
+
+            </div>
+        </form>
+
+        <span class="csn-logo"></span>
+
+    </div>
+                </div>
+
+                <div class="csn-searching">
+                    <div class="csn-search-wrap">
+                        <p>
+                            <span class="letter l1">S</span>
+                            <span class="letter l2">e</span>
+                            <span class="letter l3">a</span>
+                            <span class="letter l4">r</span>
+                            <span class="letter l5">c</span>
+                            <span class="letter l6">h</span>
+                            <span class="letter l7">i</span>
+                            <span class="letter l8">n</span>
+                            <span class="letter l9">g</span>
+                            <span class="letter l10">.</span>
+                            <span class="letter l11">.</span>
+                            <span class="letter l12">.</span>
+                        </p>
+                        <span class="csn-logo"></span>
+                    </div>
+                </div>
+
+                <span class="csn-top-bar">
+                    <span class="c c1"></span>
+                    <span class="c c2"></span>
+                    <span class="c c3"></span>
+                    <span class="c c4"></span>
+                    <span class="c c5"></span>
+                    <span class="c c6"></span>
+                </span>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div data-iframe-height=""></div>
+
+        <script type="text/javascript">
+
+        $csnQ( function(){
+
+            var errors = '{}';
+            SearchModule.init();
+            SearchModule.setErrors( errors );
+            
+            CareerFilterModule.init( 'csn-search-form' );
+
+        });
+
+    </script>
+
+    <script type="text/javascript">
+
+        $csnQ( function(){
+
+            $csnQ( document ).on( "csn_widget:events_loaded", function() {
+
+                
+                //
+                // Remove query vars for current events from url. This prevents the events from firing twice on reload
+                //
+                if ( window.location.href.indexOf( 'events' ) >= 0 && history.replaceState ) {
+
+                    var newUrl = removeParam( 'events', window.location.href );
+                    window.history.replaceState({}, "", newUrl);
+                }
+
+            });
+
+        });
+
+
+        /**
+         * Remove a parameter from sourceURL if it contains a substring of 'key'
+         *
+         * @param  key
+         * @param  sourceURL
+         * @returns  {*}
+         */
+        function removeParam( key, sourceURL ) {
+
+            var rtn = sourceURL.split("?")[0],
+                param,
+                params_arr = [],
+                queryString = (sourceURL.indexOf("?") !== -1) ? sourceURL.split("?")[1] : "";
+
+            if (queryString !== "") {
+
+                params_arr = queryString.split("&");
+
+                for (var i = params_arr.length - 1; i >= 0; i -= 1) {
+
+                    param = params_arr[i].split("=")[0];
+
+                    if ( param.indexOf( key ) !== -1 ) {
+
+                        params_arr.splice(i, 1);
+                    }
+                }
+
+                rtn = rtn + "?" + params_arr.join("&");
+            }
+            return rtn;
+        }
+
+
+    </script>
+
+    
+    </body>
+</html>
+Öè“)ø      ]„_3]„_:@Ò3†      {    :https://widget.careerschoolnow.org/?type=search&area_of_interest=medicine-and-health-care&career=phlebotomy&designation=both&hide_designation=0&affiliate=TOCMj&property=nkujE&pixel=&header=Explore%20a%20Career%20in%20Phlebotomy%20Now!&tagline=&header_background=2e5058&header_text_color=light&href=https%3A%2F%2Fwww.phlebotomyexaminer.com%2Fjobs-that-dont-deal-with-customers%2F necko:classified 1 strongly-framed 1 security-info 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 request-method GET response-head HTTP/1.1 200 OK
+Cache-Control: no-cache, private
+Content-Type: text/html; charset=UTF-8
+Date: Fri, 20 Sep 2019 05:10:11 GMT
+Server: Apache
+Server-Timing: app; dur=26.949882507324; desc="Application", timeline-event-total; dur=27.071952819824; desc="Total execution time.", timeline-event-initialisation; dur=5.8009624481201; desc="Application initialisation.", timeline-event-boot; dur=1.4810562133789; desc="Framework booting.", timeline-event-run; dur=21.271944046021; desc="Framework running."
+Vary: X-Forwarded-Proto
+X-Clockwork-Id: 1568956211-6664-427629719
+X-Clockwork-Version: 2.2.4
+ original-response-headers Cache-Control: no-cache, private
+Content-Type: text/html; charset=UTF-8
+Date: Fri, 20 Sep 2019 05:10:11 GMT
+Server: Apache
+Server-Timing: app; dur=26.949882507324; desc="Application", timeline-event-total; dur=27.071952819824; desc="Total execution time.", timeline-event-initialisation; dur=5.8009624481201; desc="Application initialisation.", timeline-event-boot; dur=1.4810562133789; desc="Framework booting.", timeline-event-run; dur=21.271944046021; desc="Framework running."
+Set-Cookie: laravel_session=eyJpdiI6IlNGc25kc2xqXC9PVFNGT3hiWElcLzFZQT09IiwidmFsdWUiOiJlMWZqRGhYcnJkMlZxYmMyZ2xjbFJQQldNS2xqOEdRN3MxTHRjcWppMytkY3VlT052QkgxaXZ5MnkzZXVZZXR2RG9xeFZ5RTZRM2JFTWdQWlY5WDk4QT09IiwibWFjIjoiZjAzNGYyMTY0MDAxNmE1MGM4ZDRlYjhkMjEyOTcyYzk4ZTNjYjMwYTY3MmYxNDY4MWMwYjYzOTA3ZmIzNDEyZiJ9; expires=Fri, 20-Sep-2019 07:10:11 GMT; Max-Age=7200; path=/; HttpOnly
+Vary: X-Forwarded-Proto
+X-Clockwork-Id: 1568956211-6664-427629719
+X-Clockwork-Version: 2.2.4
+transfer-encoding: chunked
+Connection: keep-alive
+ ctid 1 eTLD1Access 1;0;1286487668, uncompressed-len 0 net-response-time-onstart 181 net-response-time-onstop 225 predictor::resource-count 10 predictor::https://fonts.googleapis.com/css?family=Open+Sans:400,700 1,1,1568956211,4096 predictor::https://widget.careerschoolnow.org/build/css/iframe-1b0384084f.css 1,1,1568956211,4096 predictor::https://widget.careerschoolnow.org/build/js/iframe-65ba4d062c.js 1,1,1568956211,4096 predictor::https://fonts.googleapis.com/css?family=Montserrat:400,700 1,1,1568956211,4096 predictor::https://widget.careerschoolnow.org/images/csn-logo.png 1,1,1568956211,4096 predictor::https://widget.careerschoolnow.org/fonts/montserrat/montserrat-light-webfont.eot 1,1,1568956211,4096 predictor::https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_dJE3gnD_g.woff2 1,1,1568956211,4096 predictor::https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2 1,1,1568956211,4096 predictor::https://widget.careerschoolnow.org/fonts/montserrat/montserrat-light-webfont.woff2 1,1,1568956211,4096 predictor::https://widget.careerschoolnow.org/images/icon-form-check.png 1,1,1568956211,4096   ”ß
